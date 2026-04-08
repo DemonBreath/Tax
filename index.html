@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTERDIMENSIONAL CABLE</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="top-bar panel">
+        <div>
+          <p class="eyebrow">INTERDIMENSIONAL CABLE</p>
+          <h1>Channel Terminal</h1>
+        </div>
+        <button id="reset-world" class="ghost">Reset World</button>
+      </header>
+
+      <section class="panel channel-select">
+        <label for="channel">Tune Channel</label>
+        <select id="channel">
+          <option value="Destruction">Destruction</option>
+          <option value="Control">Control</option>
+          <option value="Chaos">Chaos</option>
+        </select>
+        <button id="start-match">Start Match</button>
+      </section>
+
+      <section class="panel battlefield" id="battlefield"></section>
+
+      <section class="panel turn-panel" id="turn-panel"></section>
+
+      <section class="panel summaries">
+        <h2>Turn Summary</h2>
+        <pre id="turn-summary" class="log"></pre>
+        <h2>Match Summary</h2>
+        <pre id="match-summary" class="log"></pre>
+      </section>
+
+      <section class="panel world-panel">
+        <h2>Persistent World</h2>
+        <pre id="world-summary" class="log"></pre>
+      </section>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
